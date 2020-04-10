@@ -17,7 +17,7 @@ abstract class RateLimiterTest extends TestCase
     /**
      * @test
      */
-    public function it_raises_exception_when_limit_is_exceeded(): void
+    public function it_raises_exception_when_limit_is_exceeded()
     {
         $rateLimiter = $this->getRateLimiter();
         $identifier = 'test';
@@ -39,7 +39,7 @@ abstract class RateLimiterTest extends TestCase
     /**
      * @test
      */
-    public function it_resets_limit_after_rate_interval(): void
+    public function it_resets_limit_after_rate_interval()
     {
         $rateLimiter = $this->getRateLimiter();
         $identifier = 'test';
@@ -61,7 +61,7 @@ abstract class RateLimiterTest extends TestCase
     /**
      * @test
      */
-    public function it_silently_returns_correct_status_when_limit_is_exceeded(): void
+    public function it_silently_returns_correct_status_when_limit_is_exceeded()
     {
         $rateLimiter = $this->getRateLimiter();
 
@@ -83,7 +83,7 @@ abstract class RateLimiterTest extends TestCase
     /**
      * @test
      */
-    public function it_silently_tracks_rate_limit_status_information(): void
+    public function it_silently_tracks_rate_limit_status_information()
     {
         $rateLimiter = $this->getRateLimiter();
 
@@ -105,7 +105,7 @@ abstract class RateLimiterTest extends TestCase
     /**
      * @test
      */
-    public function it_silently_resets_limit_after_rate_interval(): void
+    public function it_silently_resets_limit_after_rate_interval()
     {
         $rateLimiter = $this->getRateLimiter();
 

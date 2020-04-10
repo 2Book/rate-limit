@@ -21,7 +21,7 @@ final class RedisRateLimiter implements RateLimiter, SilentRateLimiter
         $this->keyPrefix = $keyPrefix;
     }
 
-    public function limit(string $identifier, Rate $rate): void
+    public function limit(string $identifier, Rate $rate)
     {
         $key = $this->key($identifier, $rate->getInterval());
 
