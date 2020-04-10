@@ -27,7 +27,8 @@
         "phpunit/phpunit": "^6.0"
     },
     "suggest": {
-        "ext-redis": "In order to use RedisRateLimiter"
+        "ext-redis": "In order to use RedisRateLimiter",
+        "predis/predis": "In order to use PRedisRateLimiter"
     },
     "autoload": {
         "psr-4": {
